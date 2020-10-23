@@ -7,14 +7,15 @@ Snakemake workflow for processing in-house Myb ChIP-seq data (GEO Accession: GSE
 * The Snakefile used to process the c-Myb ChIP-seq data can be found in ./results folder
 
 # Softwares
-*snakemake
-*trim-galore
-*bbmap
-*bwa
-*samtools
-*MACS2
-*intervene
-*deeptools
-*HOMER
-*bedtools
+* snakemake
+* trim-galore
+* bbmap
+* bwa
+* samtools
+* MACS2
+* intervene
+## additional softwares used in the paper but not in the Snakefile
+* deeptools
+* HOMER
+* bedtools
 
