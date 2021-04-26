@@ -352,17 +352,3 @@ rule HOMER_motif:
         """
         findMotifsGenome.pl {input} hg19 {output} -size given -preparsedDir 12_Intervene/Intervene_results/sets/;
         """
-
-#rule multibigwigsummary:
-#    input:
-#        bw=expand("90_sorted_bw/{bigwig}.bw", bigwig=BIGWIGS),
-#        controlbw=expand("90_sorted_bw/{controlbigwig}.bw", controlbigwig=CONTROLBIGWIGS)
-#    output:
-#        myb="100_deeptools_multibigwigsummary/K562_myb_ChIP_multibigWigsummary.npz",
-#        ctrl="100_deeptools_multibigwigsummary/K562_ctrl_ChIP_multibigWigsummary.npz"
-#    threads: 20
-#    run:
-#        shell("module purge")
-#        shell("module load python2")
-#        shell("multiBigwigSummary bins -b {input.bw} -p {threads} -o {output.myb}")
-#        shell("multiBigwigSummary bins -b {input.bw} -p {threads} -o {output.ctrl}")
