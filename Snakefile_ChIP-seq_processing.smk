@@ -136,7 +136,7 @@ rule macs2_call_peaks_pooledReps:
         vb=3,
         file='AUTO'
 
-    shell:
+    shell: # the version of macs2 on Abel was not compatable with python3, which snakemake operates on. Recent Macs2 can run on python3, hence no need to creat python2 vertual env
         """
         conda create --name py2 python=2.7;
         conda activate py2;
