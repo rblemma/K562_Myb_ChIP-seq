@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Job name:
-#SBATCH --job-name=DU145_ATAC_bwa
+#SBATCH --job-name=Myb_ChIP_bdgcmp
 #
 # Project:
 #SBATCH --account=nn9632k
@@ -15,7 +15,7 @@
 #SBATCH --cpus-per-task=10
 
 # notify job failure
-#SBATCH --mail-user=rozabl@ncmm.uio.no
+#SBATCH --mail-user=user@domain
 #SBATCH --mail-type=FAIL
 #SBATCH --mail-type=END
 
